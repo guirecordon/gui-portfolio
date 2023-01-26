@@ -27,8 +27,10 @@ export const WelcomeContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 6rem;
+    padding-left: 10rem; */
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 12rem;
     mix-blend-mode: screen;
     background: #fff;
     width: 100%;
@@ -41,27 +43,40 @@ export const WelcomeContainer = styled.div`
   }
 `;
 
-export const WhiteLayer = styled.div`
-  width: 90%;
-  height: 90%;
-  background: #fff;
-  opacity: 1;
+export const UpperContainer = styled.div`
+  position: absolute;
+  top: calc(50% - 152px);
+  left: calc(50% - 452px);
+  /* transform: translate(-50%, -50%); */
+  /* 
+  display: flex;
+  align-items: baseline; */
 
-  h2 {
-    font-size: 8rem;
-    background-blend-mode: overlay;
-    background-clip: text;
-    opacity: 0.2;
-    /* color: transparent; */
+  p {
+    font-size: 4rem;
+    font-weight: 900;
   }
 `;
 
-export const Box = styled.div`
-  width: 300px;
-  height: 300px;
-  background: #fff;
+export const GuiContainer = styled.span`
+  color: rgb(255, 255, 0);
+`;
 
-  h2 {
-    /* mix-blend-mode: screen; */
+export const RecordonContainer = styled.span`
+  color: rgb(0, 255, 255);
+`;
+
+export const LowerContainer = styled.div`
+  position: absolute;
+  top: calc(50% + 100px);
+  right: calc(50% - 452px);
+  /* transform: translate(-50%, -50%); */
+  /* 
+  display: flex;
+  align-items: baseline; */
+
+  p {
+    font-size: 3rem;
+    font-weight: 900;
   }
 `;
