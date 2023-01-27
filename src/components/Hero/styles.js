@@ -51,3 +51,25 @@ export const Greetings = styled.div`
     font-size: 4rem;
   }
 `;
+
+export const ScrollContainer = styled.div`
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: top-bottom 2s ease-in infinite;
+
+  @keyframes top-bottom {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(50%);
+    }
+
+    100% {
+      transform: translateY(100%);
+    }
+  }
+`;

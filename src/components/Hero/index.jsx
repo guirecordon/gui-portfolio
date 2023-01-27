@@ -1,4 +1,5 @@
-import { Greetings, HeroContainer, Shade } from './styles';
+import { ArrowBendRightDown, CaretDoubleDown } from 'phosphor-react';
+import { Greetings, HeroContainer, ScrollContainer, Shade } from './styles';
 
 export function Hero() {
   return (
@@ -11,10 +12,15 @@ export function Hero() {
       <Shade></Shade>
       <Greetings>
         <h3>Gui Recordon</h3>
-        <p>
+        {/* <p>
           I'm just like my <h3>country: young,</h3> scrappy, and hungry
-        </p>
+        </p> */}
+        <p>web developer</p>
       </Greetings>
+
+      <ScrollContainer>
+        <CaretDoubleDown size={24} color="#fff" weight="bold" />
+      </ScrollContainer>
     </HeroContainer>
   );
 }
