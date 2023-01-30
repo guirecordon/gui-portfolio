@@ -19,6 +19,7 @@ export const HeroContainer = styled.div`
 
     z-index: 0;
   }
+  scroll-snap-align: start;
 `;
 
 export const Shade = styled.div`
@@ -41,14 +42,15 @@ export const Greetings = styled.div`
   transform: translate(-50%, -50%);
 
   h3 {
-    line-height: 1;
-    font-size: 9rem;
+    line-height: 1.6;
+    font-size: 6rem;
+    font-weight: 900;
   }
 
   p {
     color: #fff;
     line-height: 1;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 `;
 

@@ -21,14 +21,13 @@ export const WelcomeContainer = styled.div`
     /* 
     z-index: 10000;
     */
+    scroll-snap-align: start;
   }
 
   h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 6rem;
-    padding-left: 10rem; */
     font-weight: 900;
     font-size: 12rem;
     mix-blend-mode: screen;
@@ -37,9 +36,6 @@ export const WelcomeContainer = styled.div`
     height: 100%;
 
     position: absolute;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
   }
 `;
 
@@ -56,6 +52,30 @@ export const UpperContainer = styled.div`
     font-size: 4rem;
     font-weight: 400;
   }
+`;
+
+export const HiContainer = styled.span`
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(285deg 100% 17%) 2%,
+    hsl(311deg 100% 17%) 4%,
+    hsl(325deg 100% 19%) 6%,
+    hsl(337deg 79% 22%) 8%,
+    hsl(354deg 49% 26%) 13%,
+    hsl(9deg 40% 27%) 19%,
+    hsl(19deg 31% 28%) 30%,
+    hsl(26deg 18% 30%) 49%,
+    hsl(33deg 5% 32%) 100%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 `;
 
 export const GuiContainer = styled.span`
@@ -185,6 +205,7 @@ export const LanguagesContainer = styled.div`
     gap: 2.5rem;
 
     font-size: 1.25rem;
+    text-transform: lowercase;
 
     background-image: linear-gradient(
       45deg,

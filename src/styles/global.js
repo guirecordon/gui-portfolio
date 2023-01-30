@@ -14,4 +14,8 @@ export const GlobalStyle = createGlobalStyle`
   ul, li { 
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
