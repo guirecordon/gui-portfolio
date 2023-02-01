@@ -57,7 +57,10 @@ export function Projects() {
       <ProjectCardsContainer>
         {data.map((project) => {
           return (
-            <CardHolder onClick={() => setSelectedProject(project.id)}>
+            <CardHolder
+              href={`#${project.id}`}
+              onClick={() => setSelectedProject(project.id)}
+            >
               <img src={project.img} width={128} height={128} alt="" />
               <p>{project.title}</p>
             </CardHolder>
@@ -66,7 +69,47 @@ export function Projects() {
       </ProjectCardsContainer>
 
       <ProjectDescriptionContainer>
-        {selectedProject > 0 ? (
+        <div>
+          <h1>My projects</h1>
+
+          <h3>
+            This is a list with some of my most recent projects. Select a
+            project on the left to see more.
+          </h3>
+
+          <p>
+            These are all original projects. Some of them I made the design
+            myself using Figma. For others, I followed suggested designs and
+            project challenges proposed by RocketSeat, which is this amazing
+            Brazilian-based Javascript community that is always on to the next
+            coolest thing.
+          </p>
+          <p>
+            I chose to leave tutorial projects out of this list even though I
+            tend to turn tutorial projects into my own, repeating them
+            ruthlessly until they become second nature.
+          </p>
+          <p>
+            If you have any suggestions of projects you'd like to see here.
+            Please hit me on the contact form below.
+          </p>
+          <p>Thank you.</p>
+          <ImageContainer>
+            <img src={profile} alt="" />
+          </ImageContainer>
+        </div>
+
+        {data.map((project) => {
+          return (
+            <div id={project.id}>
+              <h1>{project.title}</h1>
+
+              <p>{project.description}</p>
+            </div>
+          );
+        })}
+
+        {/* {selectedProject > 0 ? (
           <div>
             <h1>{data[selectedProject - 1].title}</h1>
 
@@ -94,15 +137,15 @@ export function Projects() {
               ruthlessly until they become second nature.
             </p>
             <p>
-              If there's any project suggestions you have for me. Please hit me
-              on the contact form below.
+              If you have any suggestions of projects you'd like to see here.
+              Please hit me on the contact form below.
             </p>
             <p>Thank you.</p>
             <ImageContainer>
               <img src={profile} alt="" />
             </ImageContainer>
           </div>
-        )}
+        )} */}
       </ProjectDescriptionContainer>
     </ProjectsContainer>
   );

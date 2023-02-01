@@ -28,7 +28,12 @@ export const CardHolder = styled.a`
   overflow: hidden;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 4px 4px #292524;
+  box-shadow: 1px 1px #292524;
+
+  &:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px #292524;
+  }
 
   img {
     width: 100%;
@@ -79,11 +84,13 @@ export const ProjectDescriptionContainer = styled.div`
     font-size: 1.125rem;
     color: #292524;
     padding-bottom: 2rem;
+    line-height: 1.6;
   }
 
   p {
     color: #292524;
     padding-bottom: 1.5rem;
+    line-height: 1.3;
   }
 `;
 
