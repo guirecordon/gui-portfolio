@@ -19,6 +19,11 @@ const data = [
     id: 1,
     title: 'Clothing e-commerce store',
     description: 'Project using react, contextAPI etc',
+    body: [
+      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
+      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+    ],
     img: clothing,
     video: '',
     link: 'https://github.com/guirecordon/frontend-eCommerce-level01',
@@ -27,6 +32,11 @@ const data = [
     id: 2,
     title: 'NextJS e-commerce store',
     description: 'Project using Next JS etc',
+    body: [
+      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
+      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+    ],
     img: nextjs,
     video: '',
     link: 'https://github.com/guirecordon/04-ignite-shop',
@@ -35,6 +45,11 @@ const data = [
     id: 3,
     title: 'Coffee delivery shop',
     description: 'Project using react, contextAPI etc',
+    body: [
+      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
+      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+    ],
     img: coffee,
     video: '',
     link: 'https://github.com/guirecordon/02-coffee-delivery',
@@ -43,6 +58,11 @@ const data = [
     id: 4,
     title: 'Github blog',
     description: 'Project using react, contextAPI etc',
+    body: [
+      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
+      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+    ],
     img: blog,
     video: '',
     link: 'https://github.com/guirecordon/github-blog',
@@ -105,6 +125,21 @@ export function Projects() {
               <h1>{project.title}</h1>
 
               <p>{project.description}</p>
+
+              <video
+                width="360"
+                height="240"
+                src="http://java2s.com/style/demo/your.webm"
+                controls
+                preload="none"
+                poster="http://java2s.com/style/download.png"
+              >
+                Video cannot be displayed
+              </video>
+
+              {project.body.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
             </div>
           );
         })}
