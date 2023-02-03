@@ -1,6 +1,7 @@
 import { Hero } from '../../components/Hero';
 import { Intro } from '../../components/Intro';
-import { Projects } from '../../components/Projects';
+import { ProjectsShow } from '../../components/ProjectsShow';
+import { PublishedArticles } from '../../components/PublishedArticles';
 import { Welcome } from '../../components/Welcome';
 import { ScrollContainer } from './styles';
 
@@ -10,7 +11,8 @@ export function Home() {
       <Hero />
       <Welcome />
       <Intro />
-      <Projects />
+      <ProjectsShow />
+      <PublishedArticles />
     </ScrollContainer>
   );
 }
