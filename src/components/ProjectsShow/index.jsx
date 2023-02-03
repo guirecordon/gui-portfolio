@@ -69,7 +69,7 @@ const data = [
   },
 ];
 
-export function Projects() {
+export function ProjectsShow() {
   const [selectedProject, setSelectedProject] = useState(0);
 
   return (
