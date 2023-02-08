@@ -1,3 +1,4 @@
+import { About } from '../../components/About';
 import { Contact } from '../../components/Contact';
 import { Hero } from '../../components/Hero';
 import { Intro } from '../../components/Intro';
@@ -14,6 +15,7 @@ export function Home() {
       <Intro />
       <ProjectsShow />
       <PublishedArticles />
+      <About />
       <Contact />
     </ScrollContainer>
   );
