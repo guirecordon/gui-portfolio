@@ -25,10 +25,12 @@ export function Intro() {
           <img src={IntroPhoto} alt="" />
         </IntroPhotoContainer>
         <p>
-          I've been coding for roughly three years now with a special focus on
-          Javascript and its frontend frameworks. You'll find some of my
-          projects here and will be able to see what tools I've been using to
-          build things.
+          Hey, it's so exciting to have you here! I've been coding for more than
+          three years now and it was about time I created a portfolio to show
+          what I've been working on. My main focus is on Javascript and its
+          frontend frameworks. You'll find some of my projects here and see some
+          of the tools I've been using to build things. Select from the menu to
+          jump to a specific topic or simply keep on scrolling.
         </p>
       </LeftSide>
 
@@ -40,28 +42,28 @@ export function Intro() {
             <span>
               <ArrowRight size={24} weight="bold" color="#3730a3" />
             </span>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </ContentHeaderHolder>
 
           <ContentHeaderHolder>
             <span>
               <ArrowRight size={24} weight="bold" color="#3730a3" />
             </span>
-            <a href="#">Articles</a>
+            <a href="#articles">Articles</a>
           </ContentHeaderHolder>
 
           <ContentHeaderHolder>
             <span>
               <ArrowRight size={24} weight="bold" color="#3730a3" />
             </span>
-            <a href="#">About me</a>
+            <a href="#about">About me</a>
           </ContentHeaderHolder>
 
           <ContentHeaderHolder>
             <span>
               <ArrowRight size={24} weight="bold" color="#3730a3" />
             </span>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </ContentHeaderHolder>
         </HeaderContainer>
 

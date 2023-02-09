@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
+  scroll-snap-align: start;
+
   height: 100vh;
   background: #fff;
 

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const IntroContainer = styled.div`
+  scroll-snap-align: start;
+
   height: 100vh;
   width: 100%;
   background-color: #fff;
   padding: 4rem 2rem;
-
-  /* scroll-snap-align: start; */
 
   display: grid;
   gap: 8rem;
@@ -21,7 +21,8 @@ export const LeftSide = styled.div`
   gap: 2rem;
 
   p {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-style: italic;
     line-height: 1.6;
     text-rendering: geometricPrecision;
     text-align: end;
@@ -30,8 +31,8 @@ export const LeftSide = styled.div`
 `;
 
 export const IntroPhotoContainer = styled.div`
-  width: 22rem;
-  height: 22rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   overflow: hidden;
 
@@ -47,8 +48,7 @@ export const RightSide = styled.div`
 
   h1 {
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 2rem;
     padding-bottom: 2rem;
 
     background-image: linear-gradient(

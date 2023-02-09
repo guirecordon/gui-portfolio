@@ -1,12 +1,56 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
+  scroll-snap-align: start;
+
   background: #fff;
   height: 100vh;
+  padding: 2rem;
 
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+    background-image: linear-gradient(
+      45deg,
+      hsl(350deg 89% 60%) 0%,
+      hsl(350deg 91% 60%) 11%,
+      hsl(350deg 92% 59%) 22%,
+      hsl(350deg 94% 58%) 33%,
+      hsl(350deg 95% 58%) 44%,
+      hsl(350deg 96% 57%) 56%,
+      hsl(350deg 98% 56%) 67%,
+      hsl(349deg 99% 54%) 78%,
+      hsl(349deg 99% 53%) 89%,
+      hsl(347deg 100% 50%) 100%
+    );
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+`;
+
+export const MainPage = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+
+  /* padding: 2rem; */
+
+  height: 90%;
+
+  border: solid 2px #1c1917;
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 2px 2px 4px #84cc16;
 `;
 
 export const ProjectCardsContainer = styled.div`
@@ -52,38 +96,10 @@ export const ProjectDescriptionContainer = styled.div`
   overflow-y: scroll;
   padding: 1rem;
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    padding-bottom: 1rem;
-
-    background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    );
-
-    background-size: 100%;
-    background-repeat: repeat;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
   h3 {
     font-size: 1.125rem;
     color: #292524;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     line-height: 1.6;
   }
 
@@ -95,8 +111,8 @@ export const ProjectDescriptionContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  width: 182px;
-  height: 182px;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
   overflow: hidden;
 
@@ -106,4 +122,8 @@ export const ImageContainer = styled.div`
     object-fit: cover;
     transform: scale(1.5) translate(50% 20%);
   }
+`;
+
+export const ProjectTextHolder = styled.div`
+  padding-bottom: 24rem;
 `;

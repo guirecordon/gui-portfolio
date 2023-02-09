@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const ArticlesContainer = styled.div`
+  scroll-snap-align: start;
+
   background: #fff;
   height: 100vh;
   padding: 1rem 11rem;

@@ -2,9 +2,11 @@ import { useState } from 'react';
 import {
   CardHolder,
   ImageContainer,
+  MainPage,
   ProjectCardsContainer,
   ProjectDescriptionContainer,
   ProjectsContainer,
+  ProjectTextHolder,
 } from './styles';
 
 import clothing from '../../assets/Projects/clothing-store.png';
@@ -21,7 +23,7 @@ const data = [
     description: 'Project using react, contextAPI etc',
     body: [
       'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      'I chose to leave tutorial projects out of this list.',
       "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
     ],
     img: clothing,
@@ -33,8 +35,8 @@ const data = [
     title: 'NextJS e-commerce store',
     description: 'Project using Next JS etc',
     body: [
-      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
+      'These are all original projects, some of which I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
+      'I chose to leave tutorial projects out of this list.',
       "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
     ],
     img: nextjs,
@@ -70,90 +72,24 @@ const data = [
 ];
 
 export function ProjectsShow() {
-  const [selectedProject, setSelectedProject] = useState(0);
-
   return (
     <ProjectsContainer>
-      <ProjectCardsContainer>
-        {data.map((project) => {
-          return (
-            <CardHolder
-              href={`#${project.id}`}
-              onClick={() => setSelectedProject(project.id)}
-            >
-              <img src={project.img} width={128} height={128} alt="" />
-              <p>{project.title}</p>
-            </CardHolder>
-          );
-        })}
-      </ProjectCardsContainer>
+      <h1 id="projects">My projects</h1>
 
-      <ProjectDescriptionContainer>
-        <div>
-          <h1>My projects</h1>
+      <MainPage>
+        <ProjectCardsContainer>
+          {data.map((project) => {
+            return (
+              <CardHolder href={`#${project.id}`}>
+                <img src={project.img} width={128} height={128} alt="" />
+                <p>{project.title}</p>
+              </CardHolder>
+            );
+          })}
+        </ProjectCardsContainer>
 
-          <h3>
-            This is a list with some of my most recent projects. Select a
-            project on the left to see more.
-          </h3>
-
-          <p>
-            These are all original projects. Some of them I made the design
-            myself using Figma. For others, I followed suggested designs and
-            project challenges proposed by RocketSeat, which is this amazing
-            Brazilian-based Javascript community that is always on to the next
-            coolest thing.
-          </p>
-          <p>
-            I chose to leave tutorial projects out of this list even though I
-            tend to turn tutorial projects into my own, repeating them
-            ruthlessly until they become second nature.
-          </p>
-          <p>
-            If you have any suggestions of projects you'd like to see here.
-            Please hit me on the contact form below.
-          </p>
-          <p>Thank you.</p>
-          <ImageContainer>
-            <img src={profile} alt="" />
-          </ImageContainer>
-        </div>
-
-        {data.map((project) => {
-          return (
-            <div id={project.id}>
-              <h1>{project.title}</h1>
-
-              <p>{project.description}</p>
-
-              <video
-                width="360"
-                height="240"
-                src="http://java2s.com/style/demo/your.webm"
-                controls
-                preload="none"
-                poster="http://java2s.com/style/download.png"
-              >
-                Video cannot be displayed
-              </video>
-
-              {project.body.map((paragraph) => (
-                <p>{paragraph}</p>
-              ))}
-            </div>
-          );
-        })}
-
-        {/* {selectedProject > 0 ? (
-          <div>
-            <h1>{data[selectedProject - 1].title}</h1>
-
-            <p>{data[selectedProject - 1].description}</p>
-          </div>
-        ) : (
-          <div>
-            <h1>My projects</h1>
-
+        <ProjectDescriptionContainer>
+          <ProjectTextHolder>
             <h3>
               This is a list with some of my most recent projects. Select a
               project on the left to see more.
@@ -163,14 +99,10 @@ export function ProjectsShow() {
               These are all original projects. Some of them I made the design
               myself using Figma. For others, I followed suggested designs and
               project challenges proposed by RocketSeat, which is this amazing
-              Brazilian-based coding school that is always on to the next
-              coolest thing of the frontend scene.
+              Brazilian-based Javascript community that is always on to the next
+              coolest thing.
             </p>
-            <p>
-              I chose to leave tutorial projects out of this list even though I
-              tend to turn tutorial projects into my own, repeating them
-              ruthlessly until they become second nature.
-            </p>
+            <p>I chose to leave tutorial projects out of this list.</p>
             <p>
               If you have any suggestions of projects you'd like to see here.
               Please hit me on the contact form below.
@@ -179,9 +111,34 @@ export function ProjectsShow() {
             <ImageContainer>
               <img src={profile} alt="" />
             </ImageContainer>
-          </div>
-        )} */}
-      </ProjectDescriptionContainer>
+          </ProjectTextHolder>
+
+          {data.map((project) => {
+            return (
+              <ProjectTextHolder id={project.id}>
+                <h1>{project.title}</h1>
+
+                <p>{project.description}</p>
+
+                <video
+                  width="360"
+                  height="240"
+                  src="http://java2s.com/style/demo/your.webm"
+                  controls
+                  preload="none"
+                  poster="http://java2s.com/style/download.png"
+                >
+                  Video cannot be displayed
+                </video>
+
+                {project.body.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
+              </ProjectTextHolder>
+            );
+          })}
+        </ProjectDescriptionContainer>
+      </MainPage>
     </ProjectsContainer>
   );
 }

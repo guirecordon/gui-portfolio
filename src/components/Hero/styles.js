@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
+  scroll-snap-align: start;
+
   width: 100%;
   height: 100vh;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   overflow: hidden;
-  z-index: -1000;
+  /* z-index: -1000; */
+
+  position: relative;
 
   iframe {
     width: calc(100% + 96px);
@@ -19,7 +23,6 @@ export const HeroContainer = styled.div`
 
     z-index: 0;
   }
-  scroll-snap-align: start;
 `;
 
 export const Shade = styled.div`
@@ -30,6 +33,7 @@ export const Shade = styled.div`
 `;
 
 export const Greetings = styled.div`
+  z-index: 1000;
   width: 100%;
   text-align: center;
   font-size: 7rem;
@@ -45,12 +49,14 @@ export const Greetings = styled.div`
     line-height: 1.6;
     font-size: 6rem;
     font-weight: 900;
+    text-shadow: 4px 4px #7dd3fc;
   }
 
   p {
     color: #fff;
     line-height: 1;
     font-size: 2.5rem;
+    text-shadow: 2px 2px #1c1917;
   }
 `;
 
