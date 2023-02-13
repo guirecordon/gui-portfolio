@@ -33,7 +33,9 @@ export const LeftSide = styled.div`
 export const IntroPhotoContainer = styled.div`
   width: 16rem;
   height: 16rem;
+  border: solid 4px #67e8f9;
   border-radius: 50%;
+  box-shadow: 3px 3px 3px #f472b6;
   overflow: hidden;
 
   img {
@@ -50,6 +52,7 @@ export const RightSide = styled.div`
     text-transform: uppercase;
     font-size: 2rem;
     padding-bottom: 2rem;
+    text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
       45deg,

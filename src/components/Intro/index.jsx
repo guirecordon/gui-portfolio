@@ -27,10 +27,10 @@ export function Intro() {
         <p>
           Hey, it's so exciting to have you here! I've been coding for more than
           three years now and it was about time I created a portfolio to show
-          what I've been working on. My main focus is on Javascript and its
-          frontend frameworks. You'll find some of my projects here and see some
-          of the tools I've been using to build things. Select from the menu to
-          jump to a specific topic or simply keep on scrolling.
+          what I've been working on. I'm just a fun loving Javascript developer.
+          You'll find some of my projects here and see some of the tools I've
+          been using to build things. Select from the menu to jump to a specific
+          topic or simply keep on scrolling.
         </p>
       </LeftSide>
 

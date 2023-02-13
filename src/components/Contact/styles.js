@@ -11,6 +11,7 @@ export const ContactContainer = styled.div`
     text-transform: uppercase;
     font-size: 2rem;
     padding: 1rem;
+    text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
       45deg,

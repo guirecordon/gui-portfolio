@@ -4,12 +4,14 @@ export const AboutContainer = styled.div`
   scroll-snap-align: start;
   height: 100vh;
   background: #fff;
+  padding: 2rem;
 
   h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     padding: 1rem;
+    text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
       45deg,
@@ -37,10 +39,17 @@ export const AboutContainer = styled.div`
 
 export const MainContainer = styled.div`
   background: #fff;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+
+  height: 90%;
+
+  border: solid 2px #5b21b6;
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 2px 2px 4px #fde047;
 `;
 
 export const AboutCardsContainer = styled.div`
@@ -82,8 +91,9 @@ export const AboutCardHolder = styled.a`
 `;
 
 export const AboutDescriptionContainer = styled.div`
-  /* height: 100%; */
   overflow-y: scroll;
+  scroll-behavior: smooth;
+
   padding: 1rem;
 
   h1 {
@@ -125,4 +135,21 @@ export const AboutDescriptionContainer = styled.div`
     padding-bottom: 1.5rem;
     line-height: 1.3;
   }
+`;
+
+export const AboutImageContainer = styled.div`
+  height: 16rem;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
+export const AboutSectionContainer = styled.div`
+  padding-bottom: 8rem;
 `;

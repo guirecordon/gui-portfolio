@@ -12,6 +12,7 @@ export const ProjectsContainer = styled.div`
     text-align: center;
     font-size: 2rem;
     padding-bottom: 1rem;
+    text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
       45deg,
@@ -46,11 +47,11 @@ export const MainPage = styled.div`
 
   height: 90%;
 
-  border: solid 2px #1c1917;
+  border: solid 2px #67e8f9;
   border-radius: 8px;
   overflow: hidden;
 
-  box-shadow: 2px 2px 4px #84cc16;
+  box-shadow: 2px 2px 4px #f472b6;
 `;
 
 export const ProjectCardsContainer = styled.div`
@@ -126,4 +127,13 @@ export const ImageContainer = styled.div`
 
 export const ProjectTextHolder = styled.div`
   padding-bottom: 24rem;
+`;
+
+export const GithubLink = styled.a`
+  color: #65a30d;
+  font-weight: 700;
+
+  &:hover {
+    color: #84cc16;
+  }
 `;
