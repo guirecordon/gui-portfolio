@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const ArticlesContainer = styled.div`
+  scroll-snap-align: start;
+
   background: #fff;
   height: 100vh;
   padding: 1rem 11rem;
@@ -9,6 +11,7 @@ export const ArticlesContainer = styled.div`
     text-align: center;
     padding: 2rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
       45deg,
@@ -57,6 +60,7 @@ export const CardContainer = styled.a`
   gap: 1.5rem;
   border: solid 2px #1c1917;
   border-radius: 8px;
+  box-shadow: 3px 3px 3px #84cc16;
   width: 24rem;
   overflow: hidden;
   position: relative;

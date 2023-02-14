@@ -11,7 +11,7 @@ import { LinkedinLogo, GithubLogo, TwitterLogo } from 'phosphor-react';
 export function Contact() {
   return (
     <ContactContainer>
-      <h1>Contact Form</h1>
+      <h1 id="contact">Contact Form</h1>
 
       <MainContainer>
         <form

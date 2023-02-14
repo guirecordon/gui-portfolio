@@ -5,16 +5,15 @@ import sqlzoo from '../../assets/Articles/sqlzoo-article.png';
 export function PublishedArticles() {
   return (
     <ArticlesContainer>
-      <h1>Published Articles</h1>
+      <h1 id="articles">Published Articles</h1>
 
       <h4>
         These are articles I've had published at Hackernoon. I've had nearly 9k
-        reads on two articles alone. I can't wait to start putting out more of
-        these. Teaching what you learn is one of the best known hacks found
-        within the science of learning. Yet, I don't think it's explored enough
-        by students. I try to make a point of writing as much as I can in a
-        tutorial-like style, first for my own reference then for others who
-        might benefit from my trying to make sense of difficult topics.
+        reads on two articles alone. I can't wait to start putting more of these
+        out. Teaching what you learn is one proven hack thorougly covered by the
+        science of learning. Yet, I don't think we use it often enough. I try to
+        make a point of writing as much as I can in a tutorial-like style, first
+        for my own reference, then for others to appreciate it if they will.
       </h4>
 
       <CardsContainer>

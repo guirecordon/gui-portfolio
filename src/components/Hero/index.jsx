@@ -15,7 +15,7 @@ export function Hero() {
         {/* <p>
           I'm just like my <h3>country: young,</h3> scrappy, and hungry
         </p> */}
-        <p>web developer</p>
+        <p>software developer</p>
       </Greetings>
 
       <ScrollContainer>

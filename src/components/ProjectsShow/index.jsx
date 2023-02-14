@@ -1,10 +1,12 @@
-import { useState } from 'react';
 import {
   CardHolder,
+  GithubLink,
   ImageContainer,
+  MainPage,
   ProjectCardsContainer,
   ProjectDescriptionContainer,
   ProjectsContainer,
+  ProjectTextHolder,
 } from './styles';
 
 import clothing from '../../assets/Projects/clothing-store.png';
@@ -20,9 +22,13 @@ const data = [
     title: 'Clothing e-commerce store',
     description: 'Project using react, contextAPI etc',
     body: [
-      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
-      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+      'I built this project as the first of a series of complete eCommerce websites. The idea is that all of the projects, including this one, will be a complete solution to webcommerce, including the backend. I began with the most basic React structures and appendices I knew to, then, move on to more advanced tools and solutions. So, let me go over each one of them:',
+      'CSS with styled-components: Athough, stlyled-components is already one layer up on the scale of simplicity in CSS, I decided to start with it because it offers almost the same experience as writing basic CSS, but with the advantage of better html structure and visualization.',
+      'Advanced React file structure: I applied advanced best practices to file structure, including dividing the files into pages, components, each component into their equivalent index and style files. I also applied varying themes and global styles to the project.',
+      'Context API: I used the built-in React Context API functionality to manage the global state of the shopping cart.',
+      'graphQL and Headless CMS: Since this was a frontend project, I decided to use a headless CMS tool for the database. I went with graphCMS (which now has been rebranded as Hygraph), that I already knew from using it in other projects. Being quite familiar with SQL, I find it particularly straightfoward to use graphQL API instead of REST APIs. It might sound like a more complex decision for a project that I\'m naming "basic", but, again, because I already knew SQL, I was able to reduce the learning curve and take advantage of a simpler, faster query data fetching.',
+      "Figma: I used Figma to create my own design. The objective here wasn't so much to shine my designing skills, but to practice using Figma efficiently as a React developer. I divided each component inside of Figma thus laying out the basic struture of my React project. ",
+      'Deployment: I chose to use Netfly as it is probably the most effortless tool out there to deploy a React app.',
     ],
     img: clothing,
     video: '',
@@ -33,9 +39,17 @@ const data = [
     title: 'NextJS e-commerce store',
     description: 'Project using Next JS etc',
     body: [
-      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
-      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+      'The objetive of this project was to practice Next JS. I followed a design challenge proposed by Rocketseat. Here are some of the skills I got to practice:',
+      'File-system routing.',
+      'Stitches for CSS styled components',
+      'CSS global styling.',
+      'Lazy loading withe next/image',
+      'Stripe API for payment of eCommerce products',
+      'Data fetching from the Stripe API',
+      'SSG - Static Site Generation: I loved being able to use this feature of Next JS to improve loading speed.',
+      'Next JS link for routing and navigation.',
+      'API routes with Next JS.',
+      'Context API for global state management',
     ],
     img: nextjs,
     video: '',
@@ -46,9 +60,10 @@ const data = [
     title: 'Coffee delivery shop',
     description: 'Project using react, contextAPI etc',
     body: [
-      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
-      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+      'Coffee Shop is an eCommerce project that uses TypeScript + React.',
+      'Just like in the other projects, I applied a global + themes and I used styled components for CSS styling.',
+      'I also used React Router DOM for the routing layout and an advanced React page structure layout.',
+      'In this projects, I also used React hook form and React Context API for global state management.',
     ],
     img: coffee,
     video: '',
@@ -59,9 +74,8 @@ const data = [
     title: 'Github blog',
     description: 'Project using react, contextAPI etc',
     body: [
-      'These are all original projects. Some of them I made the design myself using Figma. For others, I followed suggested designs and project challenges proposed by RocketSeat, which is this amazing Brazilian-based Javascript community that is always on to the next coolest thing.',
-      'I chose to leave tutorial projects out of this list even though I tend to turn tutorial projects into my own, repeating them ruthlessly until they become second nature.',
-      "If you have any suggestions of projects you'd like to see here. Please hit me on the contact form below.",
+      'The main objective of this project was to practice HTTP requests by using the Github API.',
+      'I used Axios for the HTTP requests.',
     ],
     img: blog,
     video: '',
@@ -70,90 +84,24 @@ const data = [
 ];
 
 export function ProjectsShow() {
-  const [selectedProject, setSelectedProject] = useState(0);
-
   return (
     <ProjectsContainer>
-      <ProjectCardsContainer>
-        {data.map((project) => {
-          return (
-            <CardHolder
-              href={`#${project.id}`}
-              onClick={() => setSelectedProject(project.id)}
-            >
-              <img src={project.img} width={128} height={128} alt="" />
-              <p>{project.title}</p>
-            </CardHolder>
-          );
-        })}
-      </ProjectCardsContainer>
+      <h1 id="projects">My projects</h1>
 
-      <ProjectDescriptionContainer>
-        <div>
-          <h1>My projects</h1>
+      <MainPage>
+        <ProjectCardsContainer>
+          {data.map((project) => {
+            return (
+              <CardHolder href={`#${project.id}`}>
+                <img src={project.img} width={128} height={128} alt="" />
+                <p>{project.title}</p>
+              </CardHolder>
+            );
+          })}
+        </ProjectCardsContainer>
 
-          <h3>
-            This is a list with some of my most recent projects. Select a
-            project on the left to see more.
-          </h3>
-
-          <p>
-            These are all original projects. Some of them I made the design
-            myself using Figma. For others, I followed suggested designs and
-            project challenges proposed by RocketSeat, which is this amazing
-            Brazilian-based Javascript community that is always on to the next
-            coolest thing.
-          </p>
-          <p>
-            I chose to leave tutorial projects out of this list even though I
-            tend to turn tutorial projects into my own, repeating them
-            ruthlessly until they become second nature.
-          </p>
-          <p>
-            If you have any suggestions of projects you'd like to see here.
-            Please hit me on the contact form below.
-          </p>
-          <p>Thank you.</p>
-          <ImageContainer>
-            <img src={profile} alt="" />
-          </ImageContainer>
-        </div>
-
-        {data.map((project) => {
-          return (
-            <div id={project.id}>
-              <h1>{project.title}</h1>
-
-              <p>{project.description}</p>
-
-              <video
-                width="360"
-                height="240"
-                src="http://java2s.com/style/demo/your.webm"
-                controls
-                preload="none"
-                poster="http://java2s.com/style/download.png"
-              >
-                Video cannot be displayed
-              </video>
-
-              {project.body.map((paragraph) => (
-                <p>{paragraph}</p>
-              ))}
-            </div>
-          );
-        })}
-
-        {/* {selectedProject > 0 ? (
-          <div>
-            <h1>{data[selectedProject - 1].title}</h1>
-
-            <p>{data[selectedProject - 1].description}</p>
-          </div>
-        ) : (
-          <div>
-            <h1>My projects</h1>
-
+        <ProjectDescriptionContainer>
+          <ProjectTextHolder>
             <h3>
               This is a list with some of my most recent projects. Select a
               project on the left to see more.
@@ -163,14 +111,10 @@ export function ProjectsShow() {
               These are all original projects. Some of them I made the design
               myself using Figma. For others, I followed suggested designs and
               project challenges proposed by RocketSeat, which is this amazing
-              Brazilian-based coding school that is always on to the next
-              coolest thing of the frontend scene.
+              Brazilian-based Javascript community that is always on to the next
+              coolest thing.
             </p>
-            <p>
-              I chose to leave tutorial projects out of this list even though I
-              tend to turn tutorial projects into my own, repeating them
-              ruthlessly until they become second nature.
-            </p>
+            <p>I chose to leave tutorial projects out of this list.</p>
             <p>
               If you have any suggestions of projects you'd like to see here.
               Please hit me on the contact form below.
@@ -179,9 +123,38 @@ export function ProjectsShow() {
             <ImageContainer>
               <img src={profile} alt="" />
             </ImageContainer>
-          </div>
-        )} */}
-      </ProjectDescriptionContainer>
+          </ProjectTextHolder>
+
+          {data.map((project) => {
+            return (
+              <ProjectTextHolder id={project.id}>
+                <h1>{project.title}</h1>
+
+                <p>{project.description}</p>
+
+                <video
+                  width="360"
+                  height="240"
+                  src="http://java2s.com/style/demo/your.webm"
+                  controls
+                  preload="none"
+                  poster="http://java2s.com/style/download.png"
+                >
+                  Video cannot be displayed
+                </video>
+
+                {project.body.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
+
+                <GithubLink href={project.link} target="_blank">
+                  Visit repository on Github
+                </GithubLink>
+              </ProjectTextHolder>
+            );
+          })}
+        </ProjectDescriptionContainer>
+      </MainPage>
     </ProjectsContainer>
   );
 }
