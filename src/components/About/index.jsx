@@ -98,42 +98,41 @@ export function About() {
           <AboutSectionContainer>
             <h1>How I got here</h1>
 
-            <h3>A short history of how I ended up in software development.</h3>
+            <h3>My software development story.</h3>
 
             <p>
-              I'm a quality assurance analyst, or I have been, on and off for a
+              I was a quality assurance analyst, or I had been, on and off for a
               long time--both in the aerospace industry and, more recently, in
-              the software development industry. Not exactly the same creature,
-              but just like chickens to dinossaurs, you know... distant
-              descendants.
+              the software development industry. Not the same creature, but like
+              chickens to dinosaurs, you know, distant descendants.
             </p>
             <p>
-              At the begginning of 2020, I began my journey towards making a
+              At the beginning of 2020, I began my journey toward making a
               career change into software development. Since then, I've
-              participated in full-time international bootcamps, divers online
-              courses and developed in Javascript, Ruby on Rails, and Python. I
-              have also taken a job as a Quality Assurance analyst, thus spring
-              boarding my first experience within the industry.
+              participated in a full-time international coding program; I have
+              completed various online courses and developed in Javascript, Ruby
+              on Rails, and Python. I have also taken a job as a Quality
+              Assurance analyst, thus springboarding my first experience within
+              the industry.
             </p>
             <p>
-              I finally came to the conclusion that I needed to finish the
-              transition I had started in 2020. After a short sabatical, I got
-              back to building projects with Javascript and here I am, in 2023,
-              to showcase them.
+              I finally concluded that I needed to finish the transition I had
+              started in 2020. After a short sabbatical, I returned to building
+              projects with Javascript, so here I am, in 2023, to showcase them.
             </p>
 
             <p>
               Please select an option at the left to read a little about some of
-              the educational experiences I've had. I'll be honest. As I was
+              the educational experiences I've had. I'll be honest, as I was
               putting this together, it was challenging to draw a straight line
               between my past experiences. So, I didn't try to. I decided to
               embrace my career journey in all its complexity. I've always been
-              a learner and that's my biggest ambition.
+              a learner, and that's my biggest ambition.
             </p>
             <p>
-              It's really been an exciting time for me to learn development and
+              It's been an exciting time for me to learn development, and
               whether you're a recruiter or a fellow developer, I hope we can
-              connect somehow and share this exciting time together.
+              connect and share this exciting time.
             </p>
             <p>Thank you.</p>
           </AboutSectionContainer>
