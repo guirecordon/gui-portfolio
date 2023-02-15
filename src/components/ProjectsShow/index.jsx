@@ -103,21 +103,21 @@ export function ProjectsShow() {
         <ProjectDescriptionContainer>
           <ProjectTextHolder>
             <h3>
-              This is a list with some of my most recent projects. Select a
+              Here is a list of some of my most recent projects. Select a
               project on the left to see more.
             </h3>
 
             <p>
-              These are all original projects. Some of them I made the design
-              myself using Figma. For others, I followed suggested designs and
-              project challenges proposed by RocketSeat, which is this amazing
-              Brazilian-based Javascript community that is always on to the next
-              coolest thing.
+              These are all original projects. For some of them, I made the
+              design myself using Figma. For others, I developed the design
+              project challenges proposed by RocketSeat, which is this
+              enthusiastic Brazilian-based Javascript community, that is always
+              on to the next coolest thing.
             </p>
             <p>I chose to leave tutorial projects out of this list.</p>
             <p>
-              If you have any suggestions of projects you'd like to see here.
-              Please hit me on the contact form below.
+              If you have suggestions for projects you'd like to see here,
+              please hit me on the contact form below.
             </p>
             <p>Thank you.</p>
             <ImageContainer>
