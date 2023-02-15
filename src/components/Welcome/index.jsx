@@ -23,7 +23,7 @@ export function Welcome() {
         frameborder="0"
       ></iframe>
 
-      <NavContainer>
+      {/* <NavContainer>
         <LanguagesContainer>
           <ul>
             <li>English</li>
@@ -37,7 +37,7 @@ export function Welcome() {
         <ThemeContainer>
           <Moon size={24} weight="bold" color="#A8A29E" />
         </ThemeContainer>
-      </NavContainer>
+      </NavContainer> */}
 
       <h1>WELCOME</h1>
       <UpperContainer>

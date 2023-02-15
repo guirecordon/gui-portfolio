@@ -40,7 +40,7 @@ export function Contact() {
                   target="_blank"
                   title="github"
                 >
-                  <GithubLogo size={32} weight="bold" color="#84cc16" />
+                  <GithubLogo size={32} weight="bold" color="#155e75" />
                 </a>
               </li>
               <li>
@@ -49,12 +49,12 @@ export function Contact() {
                   target="_blank"
                   title="linkedin"
                 >
-                  <LinkedinLogo size={32} weight="bold" color="#84cc16" />
+                  <LinkedinLogo size={32} weight="bold" color="#155e75" />
                 </a>
               </li>
               <li>
                 <a href="" target="_blank" title="twitter">
-                  <TwitterLogo size={32} weight="bold" color="#84cc16" />
+                  <TwitterLogo size={32} weight="bold" color="#155e75" />
                 </a>
               </li>
             </ul>

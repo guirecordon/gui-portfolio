@@ -31,7 +31,7 @@ const data = [
       'Deployment: I chose to use Netfly as it is probably the most effortless tool out there to deploy a React app.',
     ],
     img: clothing,
-    video: '',
+    video: 'https://www.loom.com/embed/70f7371d2cd0417091cce4a3d57ebd0f',
     link: 'https://github.com/guirecordon/frontend-eCommerce-level01',
   },
   {
@@ -52,7 +52,7 @@ const data = [
       'Context API for global state management',
     ],
     img: nextjs,
-    video: '',
+    video: 'https://www.loom.com/embed/3533484f65434954a2b4baab67349e19',
     link: 'https://github.com/guirecordon/04-ignite-shop',
   },
   {
@@ -66,7 +66,7 @@ const data = [
       'In this projects, I also used React hook form and React Context API for global state management.',
     ],
     img: coffee,
-    video: '',
+    video: 'https://www.loom.com/embed/ea8b63ab17c241eebfe24c9f4935ab5a',
     link: 'https://github.com/guirecordon/02-coffee-delivery',
   },
   {
@@ -78,7 +78,7 @@ const data = [
       'I used Axios for the HTTP requests.',
     ],
     img: blog,
-    video: '',
+    video: 'https://www.loom.com/embed/dff0383f3b454535be61f003ff3e6126',
     link: 'https://github.com/guirecordon/github-blog',
   },
 ];
@@ -103,21 +103,21 @@ export function ProjectsShow() {
         <ProjectDescriptionContainer>
           <ProjectTextHolder>
             <h3>
-              This is a list with some of my most recent projects. Select a
+              Here is a list of some of my most recent projects. Select a
               project on the left to see more.
             </h3>
 
             <p>
-              These are all original projects. Some of them I made the design
-              myself using Figma. For others, I followed suggested designs and
-              project challenges proposed by RocketSeat, which is this amazing
-              Brazilian-based Javascript community that is always on to the next
-              coolest thing.
+              These are all original projects. For some of them, I made the
+              design myself using Figma. For others, I developed the design
+              project challenges proposed by RocketSeat, which is this
+              enthusiastic Brazilian-based Javascript community, that is always
+              on to the next coolest thing.
             </p>
             <p>I chose to leave tutorial projects out of this list.</p>
             <p>
-              If you have any suggestions of projects you'd like to see here.
-              Please hit me on the contact form below.
+              If you have suggestions for projects you'd like to see here,
+              please hit me on the contact form below.
             </p>
             <p>Thank you.</p>
             <ImageContainer>
@@ -132,16 +132,28 @@ export function ProjectsShow() {
 
                 <p>{project.description}</p>
 
-                <video
-                  width="360"
-                  height="240"
-                  src="http://java2s.com/style/demo/your.webm"
-                  controls
-                  preload="none"
-                  poster="http://java2s.com/style/download.png"
+                <div
+                  style={{
+                    position: 'relative',
+                    paddingBottom: '56.25%',
+                    height: 0,
+                  }}
                 >
-                  Video cannot be displayed
-                </video>
+                  <iframe
+                    src={project.video}
+                    frameborder="0"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  ></iframe>
+                </div>
 
                 {project.body.map((paragraph) => (
                   <p>{paragraph}</p>

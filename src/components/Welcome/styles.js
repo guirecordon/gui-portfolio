@@ -3,12 +3,9 @@ import styled from 'styled-components';
 export const WelcomeContainer = styled.div`
   scroll-snap-align: start;
 
-  /* margin-top: 100vh; */
-
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  /* margin-top: 100vh; */
 
   position: relative;
 
@@ -20,9 +17,7 @@ export const WelcomeContainer = styled.div`
     position: absolute;
     top: -68px;
     left: -68px;
-    /* 
-    z-index: 10000;
-    */
+
     scroll-snap-align: start;
   }
 
@@ -45,10 +40,6 @@ export const UpperContainer = styled.div`
   position: absolute;
   top: calc(50% - 152px);
   left: calc(50% - 452px);
-  /* transform: translate(-50%, -50%); */
-  /* 
-  display: flex;
-  align-items: baseline; */
 
   p {
     font-size: 4rem;
@@ -109,7 +100,7 @@ export const GuiContainer = styled.span`
 export const RecordonContainer = styled.span`
   font-weight: 900;
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     50deg,
     hsl(224deg 64% 33%) 0%,
     hsl(232deg 51% 39%) 21%,
@@ -121,6 +112,20 @@ export const RecordonContainer = styled.span`
     hsl(279deg 70% 58%) 69%,
     hsl(286deg 77% 60%) 79%,
     hsl(292deg 84% 61%) 100%
+  ); */
+
+  background-image: linear-gradient(
+    45deg,
+    hsl(199deg 95% 74%) 0%,
+    hsl(199deg 85% 70%) 11%,
+    hsl(198deg 77% 67%) 22%,
+    hsl(197deg 70% 63%) 33%,
+    hsl(197deg 65% 59%) 44%,
+    hsl(196deg 61% 56%) 56%,
+    hsl(195deg 57% 52%) 67%,
+    hsl(194deg 60% 48%) 78%,
+    hsl(193deg 70% 43%) 89%,
+    hsl(192deg 91% 36%) 100%
   );
 
   background-size: 100%;
@@ -136,10 +141,6 @@ export const LowerContainer = styled.div`
   position: absolute;
   top: calc(50% + 100px);
   right: calc(50% - 452px);
-  /* transform: translate(-50%, -50%); */
-  /* 
-  display: flex;
-  align-items: baseline; */
 
   p {
     font-size: 3rem;
@@ -147,7 +148,7 @@ export const LowerContainer = styled.div`
     color: #fff;
     padding: 0 1rem;
 
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       50deg,
       hsl(273deg 67% 39%) 0%,
       hsl(288deg 76% 36%) 21%,
@@ -159,6 +160,20 @@ export const LowerContainer = styled.div`
       hsl(335deg 80% 51%) 69%,
       hsl(342deg 85% 56%) 79%,
       hsl(350deg 89% 60%) 100%
+    ); */
+
+    background-image: linear-gradient(
+      250deg,
+      hsl(199deg 95% 74%) 0%,
+      hsl(199deg 76% 69%) 3%,
+      hsl(199deg 63% 63%) 9%,
+      hsl(198deg 53% 58%) 16%,
+      hsl(198deg 46% 53%) 25%,
+      hsl(197deg 44% 48%) 38%,
+      hsl(197deg 48% 42%) 53%,
+      hsl(196deg 52% 37%) 70%,
+      hsl(195deg 59% 32%) 86%,
+      hsl(194deg 70% 27%) 100%
     );
   }
 `;
