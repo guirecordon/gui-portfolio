@@ -5,16 +5,14 @@ export const HeroContainer = styled.div`
 
   width: 100%;
   height: 100vh;
-  /* position: fixed; */
-  /* top: 0; */
+
   overflow: hidden;
-  /* z-index: -1000; */
 
   position: relative;
 
   iframe {
     width: calc(100% + 96px);
-    height: calc(100% + 96px);
+    height: calc(100% + 116px);
 
     overflow: hidden;
     position: absolute;
