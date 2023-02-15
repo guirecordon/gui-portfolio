@@ -15,6 +15,7 @@ import ucpBc from '../../assets/About/ucp-bc.jpg';
 import byuCampus from '../../assets/About/BYU_baseball.0.webp';
 import cefetLogo from '../../assets/About/cefet-logo.png';
 import cefetCampus from '../../assets/About/cefet-fachada.jpg';
+import woodpeckers from '../../assets/About/woodpeckers.png';
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
     ],
     img: microverseLogo,
     video: '',
-    link: 'https://github.com/guirecordon/frontend-eCommerce-level01',
+    link: woodpeckers,
   },
   {
     id: '02',
