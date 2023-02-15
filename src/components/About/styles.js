@@ -14,6 +14,20 @@ export const AboutContainer = styled.div`
     text-shadow: 2px 2px #67e8f9;
 
     background-image: linear-gradient(
+      250deg,
+      hsl(199deg 95% 74%) 0%,
+      hsl(199deg 76% 69%) 3%,
+      hsl(199deg 63% 63%) 9%,
+      hsl(198deg 53% 58%) 16%,
+      hsl(198deg 46% 53%) 25%,
+      hsl(197deg 44% 48%) 38%,
+      hsl(197deg 48% 42%) 53%,
+      hsl(196deg 52% 37%) 70%,
+      hsl(195deg 59% 32%) 86%,
+      hsl(194deg 70% 27%) 100%
+    );
+    /* 
+    background-image: linear-gradient(
       45deg,
       hsl(350deg 89% 60%) 0%,
       hsl(350deg 91% 60%) 11%,
@@ -25,7 +39,7 @@ export const AboutContainer = styled.div`
       hsl(349deg 99% 54%) 78%,
       hsl(349deg 99% 53%) 89%,
       hsl(347deg 100% 50%) 100%
-    );
+    ); */
 
     background-size: 100%;
     background-repeat: repeat;
@@ -45,11 +59,14 @@ export const MainContainer = styled.div`
 
   height: 90%;
 
-  border: solid 2px #5b21b6;
+  /* border: solid 2px #5b21b6; */
+  border: solid 3px #155e75;
+
   border-radius: 8px;
   overflow: hidden;
 
-  box-shadow: 2px 2px 4px #fde047;
+  /* box-shadow: 2px 2px 4px #fde047; */
+  box-shadow: 2px 2px 4px #67e8f9;
 `;
 
 export const AboutCardsContainer = styled.div`
@@ -101,6 +118,20 @@ export const AboutDescriptionContainer = styled.div`
     padding-bottom: 1rem;
 
     background-image: linear-gradient(
+      250deg,
+      hsl(199deg 95% 74%) 0%,
+      hsl(199deg 76% 69%) 3%,
+      hsl(199deg 63% 63%) 9%,
+      hsl(198deg 53% 58%) 16%,
+      hsl(198deg 46% 53%) 25%,
+      hsl(197deg 44% 48%) 38%,
+      hsl(197deg 48% 42%) 53%,
+      hsl(196deg 52% 37%) 70%,
+      hsl(195deg 59% 32%) 86%,
+      hsl(194deg 70% 27%) 100%
+    );
+
+    /* background-image: linear-gradient(
       45deg,
       hsl(350deg 89% 60%) 0%,
       hsl(350deg 91% 60%) 11%,
@@ -112,7 +143,7 @@ export const AboutDescriptionContainer = styled.div`
       hsl(349deg 99% 54%) 78%,
       hsl(349deg 99% 53%) 89%,
       hsl(347deg 100% 50%) 100%
-    );
+    ); */
 
     background-size: 100%;
     background-repeat: repeat;
