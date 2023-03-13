@@ -56,6 +56,23 @@ export const Greetings = styled.div`
     font-size: 2.5rem;
     text-shadow: 2px 2px #1c1917;
   }
+
+  @media (max-width: 600px) {
+    h3 {
+      line-height: 1;
+      font-size: 3.2rem;
+      font-weight: 900;
+      text-shadow: 2px 2px #7dd3fc;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      color: #fff;
+      line-height: 1;
+      font-size: 1.8rem;
+      text-shadow: 2px 2px #1c1917;
+    }
+  }
 `;
 
 export const ScrollContainer = styled.div`

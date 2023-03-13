@@ -1,14 +1,23 @@
-import { ArrowBendRightDown, CaretDoubleDown } from 'phosphor-react';
+import { CaretDoubleDown } from 'phosphor-react';
 import { Greetings, HeroContainer, ScrollContainer, Shade } from './styles';
+import useMediaQuery from '../../hooks/usehooks';
+import coverMobile from '../../assets/mobile/guiSurf.jpeg';
 
 export function Hero() {
+  const matches = useMediaQuery('(max-width: 600px)');
+
   return (
     <HeroContainer>
-      <iframe
-        src="https://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1&mute=1&start=15&end=240&loop=1&controls=0&showinfo=0&playlist=wTcNtgA6gHs"
-        allow="autoplay"
-        frameborder="0"
-      ></iframe>
+      {matches ? (
+        <img src={coverMobile} />
+      ) : (
+        <iframe
+          src="https://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1&mute=1&start=15&end=240&loop=1&controls=0&showinfo=0&playlist=wTcNtgA6gHs"
+          allow="autoplay"
+          frameborder="0"
+        ></iframe>
+      )}
+
       <Shade></Shade>
       <Greetings>
         <h3>Gui Recordon</h3>
