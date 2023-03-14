@@ -37,7 +37,7 @@ export const WelcomeContainer = styled.div`
 
   @media (max-width: 600px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
   }
 `;
@@ -53,11 +53,11 @@ export const UpperContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    top: calc(50% - 62px);
+    top: calc(50% - 92px);
     left: 16px;
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.75rem;
     }
   }
 `;
@@ -185,6 +185,7 @@ export const LowerContainer = styled.div`
 
     p {
       font-size: 1.5rem;
+      padding: 1rem;
     }
   }
 `;

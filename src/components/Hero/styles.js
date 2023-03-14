@@ -64,7 +64,7 @@ export const Greetings = styled.div`
   @media (max-width: 600px) {
     h3 {
       line-height: 1;
-      font-size: 3.2rem;
+      font-size: 3.5rem;
       font-weight: 900;
       text-shadow: 2px 2px #7dd3fc;
       padding-bottom: 1rem;
