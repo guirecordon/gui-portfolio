@@ -49,7 +49,8 @@ export const ArticlesContainer = styled.div`
   @media (max-width: 600px) {
     padding: 1rem;
     width: 100%;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    height: auto;
 
     h4 {
       font-size: 0.85rem;

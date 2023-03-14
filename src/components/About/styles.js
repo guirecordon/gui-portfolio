@@ -26,20 +26,6 @@ export const AboutContainer = styled.div`
       hsl(195deg 59% 32%) 86%,
       hsl(194deg 70% 27%) 100%
     );
-    /* 
-    background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
 
     background-size: 100%;
     background-repeat: repeat;
@@ -130,20 +116,6 @@ export const AboutDescriptionContainer = styled.div`
       hsl(195deg 59% 32%) 86%,
       hsl(194deg 70% 27%) 100%
     );
-
-    /* background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
 
     background-size: 100%;
     background-repeat: repeat;
