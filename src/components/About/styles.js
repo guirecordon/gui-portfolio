@@ -35,6 +35,10 @@ export const AboutContainer = styled.div`
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
   }
+
+  @media (max-width: 600px) {
+    padding: 0rem 0.5rem 2rem 0.5rem;
+  }
 `;
 
 export const MainContainer = styled.div`
@@ -45,14 +49,16 @@ export const MainContainer = styled.div`
 
   height: 90%;
 
-  /* border: solid 2px #5b21b6; */
   border: solid 3px #155e75;
 
   border-radius: 8px;
   overflow: hidden;
 
-  /* box-shadow: 2px 2px 4px #fde047; */
   box-shadow: 2px 2px 4px #67e8f9;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const AboutCardsContainer = styled.div`
@@ -138,6 +144,16 @@ export const AboutDescriptionContainer = styled.div`
     padding-bottom: 1.5rem;
     line-height: 1.3;
   }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
 `;
 
 export const AboutImageContainer = styled.div`
@@ -151,8 +167,16 @@ export const AboutImageContainer = styled.div`
     width: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
 `;
 
 export const AboutSectionContainer = styled.div`
   padding-bottom: 8rem;
+
+  @media (max-width: 600px) {
+    padding-bottom: 2rem;
+  }
 `;
