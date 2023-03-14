@@ -37,6 +37,7 @@ export const AboutContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     padding: 0rem 0.5rem 2rem 0.5rem;
   }
 `;
@@ -143,16 +144,6 @@ export const AboutDescriptionContainer = styled.div`
     color: #292524;
     padding-bottom: 1.5rem;
     line-height: 1.3;
-  }
-
-  @media (max-width: 600px) {
-    h3 {
-      font-size: 0.95rem;
-    }
-
-    p {
-      font-size: 0.85rem;
-    }
   }
 `;
 

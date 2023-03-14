@@ -47,14 +47,11 @@ export const ArticlesContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     padding: 1rem;
     width: 100%;
     padding-bottom: 4rem;
     height: auto;
-
-    h4 {
-      font-size: 0.85rem;
-    }
   }
 `;
 

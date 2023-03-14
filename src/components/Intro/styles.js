@@ -13,6 +13,7 @@ export const IntroContainer = styled.div`
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     display: block;
     height: auto;
     padding: 2rem 1rem;
@@ -93,7 +94,7 @@ export const LogosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
 
   padding-bottom: 2rem;

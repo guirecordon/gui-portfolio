@@ -38,6 +38,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     padding: 0.5rem;
   }
 `;
@@ -114,16 +115,6 @@ export const ProjectDescriptionContainer = styled.div`
     color: #292524;
     padding-bottom: 1.5rem;
     line-height: 1.3;
-  }
-
-  @media (max-width: 600px) {
-    h3 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.85rem;
-    }
   }
 `;
 
