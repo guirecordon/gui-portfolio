@@ -94,7 +94,7 @@ export const LogosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
 
   padding-bottom: 2rem;
