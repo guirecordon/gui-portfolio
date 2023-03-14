@@ -16,7 +16,7 @@ export const IntroContainer = styled.div`
     display: block;
     height: auto;
     padding: 2rem 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
   }
 `;
 
