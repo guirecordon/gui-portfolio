@@ -25,6 +25,10 @@ export const HeroContainer = styled.div`
   img {
     height: 100%;
   }
+
+  @media (max-width: 600px) {
+    scroll-snap-align: none;
+  }
 `;
 
 export const Shade = styled.div`

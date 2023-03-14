@@ -137,6 +137,7 @@ export const ContactContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     height: auto;
     scroll-snap-align: auto;
 

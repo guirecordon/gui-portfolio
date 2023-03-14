@@ -38,6 +38,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     padding: 0.5rem;
   }
 `;

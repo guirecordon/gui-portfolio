@@ -36,6 +36,8 @@ export const WelcomeContainer = styled.div`
   }
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
+
     h1 {
       font-size: 5rem;
     }

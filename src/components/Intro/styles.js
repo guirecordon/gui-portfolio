@@ -13,6 +13,7 @@ export const IntroContainer = styled.div`
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: 600px) {
+    scroll-snap-align: none;
     display: block;
     height: auto;
     padding: 2rem 1rem;
