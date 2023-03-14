@@ -101,7 +101,7 @@ export function About() {
                   for a long time--both in the aerospace industry and, more
                   recently, in the software development industry. Not the same
                   creature, but like chickens to dinosaurs, you know, distant
-                  descendants.
+                  relatives.
                 </p>
                 <p>
                   At the beginning of 2020, I began my journey toward making a
