@@ -11,6 +11,13 @@ export const IntroContainer = styled.div`
   display: grid;
   gap: 8rem;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 600px) {
+    display: block;
+    height: auto;
+    padding: 2rem 1rem;
+    margin-bottom: 8rem;
+  }
 `;
 
 export const LeftSide = styled.div`
@@ -27,6 +34,10 @@ export const LeftSide = styled.div`
     text-rendering: geometricPrecision;
     text-align: end;
     color: #292524;
+  }
+
+  @media (max-width: 600px) {
+    padding-bottom: 4rem;
   }
 `;
 
@@ -54,20 +65,6 @@ export const RightSide = styled.div`
     padding-bottom: 2rem;
     text-shadow: 2px 2px #67e8f9;
 
-    /* background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
-
     background-image: linear-gradient(
       250deg,
       hsl(199deg 95% 74%) 0%,
@@ -94,7 +91,9 @@ export const RightSide = styled.div`
 
 export const LogosContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 
   padding-bottom: 2rem;
@@ -116,10 +115,6 @@ export const LogoHolder = styled.div`
   }
 
   &:hover {
-    /* img {
-      transform: translate(-0.5rem, -0.5rem);
-    } */
-
     span {
       animation: name-wiggle ease 0.5s 1;
 
