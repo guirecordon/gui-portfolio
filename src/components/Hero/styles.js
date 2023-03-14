@@ -21,6 +21,10 @@ export const HeroContainer = styled.div`
 
     z-index: 0;
   }
+
+  img {
+    height: 100%;
+  }
 `;
 
 export const Shade = styled.div`
