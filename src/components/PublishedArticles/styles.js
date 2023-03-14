@@ -52,10 +52,6 @@ export const ArticlesContainer = styled.div`
     width: 100%;
     padding-bottom: 4rem;
     height: auto;
-
-    h4 {
-      font-size: 0.85rem;
-    }
   }
 `;
 

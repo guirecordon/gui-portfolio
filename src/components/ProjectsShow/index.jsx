@@ -98,8 +98,8 @@ export function ProjectsShow() {
             <ProjectDescriptionContainer>
               <ProjectTextHolder>
                 <h3>
-                  Here is a list of some of my most recent projects. Select a
-                  project on the left to see more.
+                  Here is a list of some of my most recent projects. Keep
+                  scrolling to find out more about them.
                 </h3>
 
                 <p>

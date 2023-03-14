@@ -145,16 +145,6 @@ export const AboutDescriptionContainer = styled.div`
     padding-bottom: 1.5rem;
     line-height: 1.3;
   }
-
-  @media (max-width: 600px) {
-    h3 {
-      font-size: 0.95rem;
-    }
-
-    p {
-      font-size: 0.85rem;
-    }
-  }
 `;
 
 export const AboutImageContainer = styled.div`
