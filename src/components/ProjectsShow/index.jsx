@@ -16,6 +16,8 @@ import blog from '../../assets/Projects/blog.png';
 
 import profile from '../../assets/profile.png';
 
+import useMediaQuery from '../../hooks/usehooks';
+
 const data = [
   {
     id: 1,
@@ -84,88 +86,163 @@ const data = [
 ];
 
 export function ProjectsShow() {
+  const matches = useMediaQuery('(max-width: 600px)');
+
   return (
     <ProjectsContainer>
       <h1 id="projects">My projects</h1>
 
       <MainPage>
-        <ProjectCardsContainer>
-          {data.map((project) => {
-            return (
-              <CardHolder href={`#${project.id}`}>
-                <img src={project.img} width={128} height={128} alt="" />
-                <p>{project.title}</p>
-              </CardHolder>
-            );
-          })}
-        </ProjectCardsContainer>
+        {matches ? (
+          <>
+            <ProjectDescriptionContainer>
+              <ProjectTextHolder>
+                <h3>
+                  Here is a list of some of my most recent projects. Select a
+                  project on the left to see more.
+                </h3>
 
-        <ProjectDescriptionContainer>
-          <ProjectTextHolder>
-            <h3>
-              Here is a list of some of my most recent projects. Select a
-              project on the left to see more.
-            </h3>
-
-            <p>
-              These are all original projects. For some of them, I made the
-              design myself using Figma. For others, I developed the design
-              project challenges proposed by RocketSeat, which is this
-              enthusiastic Brazilian-based Javascript community, that is always
-              on to the next coolest thing.
-            </p>
-            <p>I chose to leave tutorial projects out of this list.</p>
-            <p>
-              If you have suggestions for projects you'd like to see here,
-              please hit me on the contact form below.
-            </p>
-            <p>Thank you.</p>
-            <ImageContainer>
-              <img src={profile} alt="" />
-            </ImageContainer>
-          </ProjectTextHolder>
-
-          {data.map((project) => {
-            return (
-              <ProjectTextHolder id={project.id}>
-                <h1>{project.title}</h1>
-
-                <p>{project.description}</p>
-
-                <div
-                  style={{
-                    position: 'relative',
-                    paddingBottom: '56.25%',
-                    height: 0,
-                  }}
-                >
-                  <iframe
-                    src={project.video}
-                    frameborder="0"
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    allowfullscreen
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: '100%',
-                    }}
-                  ></iframe>
-                </div>
-
-                {project.body.map((paragraph) => (
-                  <p>{paragraph}</p>
-                ))}
-
-                <GithubLink href={project.link} target="_blank">
-                  Visit repository on Github
-                </GithubLink>
+                <p>
+                  These are all original projects. For some of them, I made the
+                  design myself using Figma. For others, I developed the design
+                  project challenges proposed by RocketSeat, which is this
+                  enthusiastic Brazilian-based Javascript community, that is
+                  always on to the next coolest thing.
+                </p>
+                <p>I chose to leave tutorial projects out of this list.</p>
+                <p>
+                  If you have suggestions for projects you'd like to see here,
+                  please hit me on the contact form below.
+                </p>
+                <p>Thank you.</p>
+                <ImageContainer>
+                  <img src={profile} alt="" />
+                </ImageContainer>
               </ProjectTextHolder>
-            );
-          })}
-        </ProjectDescriptionContainer>
+
+              {data.map((project) => {
+                return (
+                  <ProjectTextHolder id={project.id}>
+                    <h1>{project.title}</h1>
+
+                    <p>{project.description}</p>
+
+                    <div
+                      style={{
+                        position: 'relative',
+                        paddingBottom: '56.25%',
+                        height: 0,
+                      }}
+                    >
+                      <iframe
+                        src={project.video}
+                        frameborder="0"
+                        webkitallowfullscreen
+                        mozallowfullscreen
+                        allowfullscreen
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%',
+                        }}
+                      ></iframe>
+                    </div>
+
+                    {project.body.map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))}
+
+                    <GithubLink href={project.link} target="_blank">
+                      Visit repository on Github
+                    </GithubLink>
+                  </ProjectTextHolder>
+                );
+              })}
+            </ProjectDescriptionContainer>
+          </>
+        ) : (
+          <>
+            <ProjectCardsContainer>
+              {data.map((project) => {
+                return (
+                  <CardHolder href={`#${project.id}`}>
+                    <img src={project.img} width={128} height={128} alt="" />
+                    <p>{project.title}</p>
+                  </CardHolder>
+                );
+              })}
+            </ProjectCardsContainer>
+
+            <ProjectDescriptionContainer>
+              <ProjectTextHolder>
+                <h3>
+                  Here is a list of some of my most recent projects. Select a
+                  project on the left to see more.
+                </h3>
+
+                <p>
+                  These are all original projects. For some of them, I made the
+                  design myself using Figma. For others, I developed the design
+                  project challenges proposed by RocketSeat, which is this
+                  enthusiastic Brazilian-based Javascript community, that is
+                  always on to the next coolest thing.
+                </p>
+                <p>I chose to leave tutorial projects out of this list.</p>
+                <p>
+                  If you have suggestions for projects you'd like to see here,
+                  please hit me on the contact form below.
+                </p>
+                <p>Thank you.</p>
+                <ImageContainer>
+                  <img src={profile} alt="" />
+                </ImageContainer>
+              </ProjectTextHolder>
+
+              {data.map((project) => {
+                return (
+                  <ProjectTextHolder id={project.id}>
+                    <h1>{project.title}</h1>
+
+                    <p>{project.description}</p>
+
+                    <div
+                      style={{
+                        position: 'relative',
+                        paddingBottom: '56.25%',
+                        height: 0,
+                      }}
+                    >
+                      <iframe
+                        src={project.video}
+                        frameborder="0"
+                        webkitallowfullscreen
+                        mozallowfullscreen
+                        allowfullscreen
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%',
+                        }}
+                      ></iframe>
+                    </div>
+
+                    {project.body.map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))}
+
+                    <GithubLink href={project.link} target="_blank">
+                      Visit repository on Github
+                    </GithubLink>
+                  </ProjectTextHolder>
+                );
+              })}
+            </ProjectDescriptionContainer>
+          </>
+        )}
       </MainPage>
     </ProjectsContainer>
   );

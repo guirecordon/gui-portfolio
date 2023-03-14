@@ -27,20 +27,6 @@ export const ArticlesContainer = styled.div`
       hsl(194deg 70% 27%) 100%
     );
 
-    /* background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
-
     background-size: 100%;
     background-repeat: repeat;
 
@@ -59,6 +45,17 @@ export const ArticlesContainer = styled.div`
     color: #1c1917;
     line-height: 1.6;
   }
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 4rem;
+    height: auto;
+
+    h4 {
+      font-size: 0.85rem;
+    }
+  }
 `;
 
 export const CardsContainer = styled.div`
@@ -66,6 +63,11 @@ export const CardsContainer = styled.div`
   justify-content: center;
   gap: 2rem;
   height: 12rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height: 24rem;
+  }
 `;
 
 export const CardContainer = styled.a`
@@ -105,5 +107,9 @@ export const CardContainer = styled.a`
     span {
       font-weight: 700;
     }
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;

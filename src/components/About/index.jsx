@@ -17,6 +17,8 @@ import cefetLogo from '../../assets/About/cefet-logo.png';
 import cefetCampus from '../../assets/About/cefet-fachada.jpg';
 import woodpeckers from '../../assets/About/woodpeckers.png';
 
+import useMediaQuery from '../../hooks/usehooks';
+
 const data = [
   {
     id: '01',
@@ -79,83 +81,157 @@ const data = [
 ];
 
 export function About() {
+  const matches = useMediaQuery('(max-width: 600px)');
+
   return (
     <AboutContainer>
       <h1 id="about">About me</h1>
 
       <MainContainer>
-        <AboutCardsContainer>
-          {data.map((project) => {
-            return (
-              <AboutCardHolder href={`#${project.id}`}>
-                <img src={project.img} width={128} height={128} alt="" />
-                <p>{project.title}</p>
-              </AboutCardHolder>
-            );
-          })}
-        </AboutCardsContainer>
+        {matches ? (
+          <>
+            <AboutDescriptionContainer>
+              <AboutSectionContainer>
+                <h1>How I got here</h1>
 
-        <AboutDescriptionContainer>
-          <AboutSectionContainer>
-            <h1>How I got here</h1>
+                <h3>My software development story.</h3>
 
-            <h3>My software development story.</h3>
+                <p>
+                  I was a quality assurance analyst, or I had been, on and off
+                  for a long time--both in the aerospace industry and, more
+                  recently, in the software development industry. Not the same
+                  creature, but like chickens to dinosaurs, you know, distant
+                  descendants.
+                </p>
+                <p>
+                  At the beginning of 2020, I began my journey toward making a
+                  career change into software development. Since then, I've
+                  participated in a full-time international coding program; I
+                  have completed various online courses and developed in
+                  Javascript, Ruby on Rails, and Python. I have also taken a job
+                  as a Quality Assurance analyst, thus springboarding my first
+                  experience within the industry.
+                </p>
+                <p>
+                  I finally concluded that I needed to finish the transition I
+                  had started in 2020. After a short sabbatical, I returned to
+                  building projects with Javascript, so here I am, in 2023, to
+                  showcase them.
+                </p>
 
-            <p>
-              I was a quality assurance analyst, or I had been, on and off for a
-              long time--both in the aerospace industry and, more recently, in
-              the software development industry. Not the same creature, but like
-              chickens to dinosaurs, you know, distant descendants.
-            </p>
-            <p>
-              At the beginning of 2020, I began my journey toward making a
-              career change into software development. Since then, I've
-              participated in a full-time international coding program; I have
-              completed various online courses and developed in Javascript, Ruby
-              on Rails, and Python. I have also taken a job as a Quality
-              Assurance analyst, thus springboarding my first experience within
-              the industry.
-            </p>
-            <p>
-              I finally concluded that I needed to finish the transition I had
-              started in 2020. After a short sabbatical, I returned to building
-              projects with Javascript, so here I am, in 2023, to showcase them.
-            </p>
-
-            <p>
-              Please select an option at the left to read a little about some of
-              the experiences I've had. I'll be honest, as I was putting this
-              together, it was challenging to draw a straight line between my
-              past experiences. So, I didn't try to. I decided to embrace my
-              career journey in all its complexity. I've always been a learner,
-              and that's my biggest ambition.
-            </p>
-            <p>
-              It's been an exciting time for me to learn development, and
-              whether you're a recruiter or a fellow developer, I hope we can
-              connect and share this exciting time.
-            </p>
-            <p>Thank you.</p>
-          </AboutSectionContainer>
-
-          {data.map((project) => {
-            return (
-              <AboutSectionContainer id={project.id}>
-                <h1>{project.title}</h1>
-
-                <p>{project.description}</p>
-
-                <AboutImageContainer>
-                  <img src={project.link} alt="" />
-                </AboutImageContainer>
-
-                {project.body.map((paragraph) => (
-                  <p>{paragraph}</p>
-                ))}
+                <p>
+                  Please select an option at the left to read a little about
+                  some of the experiences I've had. I'll be honest, as I was
+                  putting this together, it was challenging to draw a straight
+                  line between my past experiences. So, I didn't try to. I
+                  decided to embrace my career journey in all its complexity.
+                  I've always been a learner, and that's my biggest ambition.
+                </p>
+                <p>
+                  It's been an exciting time for me to learn development, and
+                  whether you're a recruiter or a fellow developer, I hope we
+                  can connect and share this exciting time.
+                </p>
+                <p>Thank you.</p>
               </AboutSectionContainer>
-            );
-          })}
-        </AboutDescriptionContainer>
+
+              {data.map((project) => {
+                return (
+                  <AboutSectionContainer id={project.id}>
+                    <h1>{project.title}</h1>
+
+                    <p>{project.description}</p>
+
+                    <AboutImageContainer>
+                      <img src={project.link} alt="" />
+                    </AboutImageContainer>
+
+                    {project.body.map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))}
+                  </AboutSectionContainer>
+                );
+              })}
+            </AboutDescriptionContainer>
+          </>
+        ) : (
+          <>
+            <AboutCardsContainer>
+              {data.map((project) => {
+                return (
+                  <AboutCardHolder href={`#${project.id}`}>
+                    <img src={project.img} width={128} height={128} alt="" />
+                    <p>{project.title}</p>
+                  </AboutCardHolder>
+                );
+              })}
+            </AboutCardsContainer>
+
+            <AboutDescriptionContainer>
+              <AboutSectionContainer>
+                <h1>How I got here</h1>
+
+                <h3>My software development story.</h3>
+
+                <p>
+                  I was a quality assurance analyst, or I had been, on and off
+                  for a long time--both in the aerospace industry and, more
+                  recently, in the software development industry. Not the same
+                  creature, but like chickens to dinosaurs, you know, distant
+                  descendants.
+                </p>
+                <p>
+                  At the beginning of 2020, I began my journey toward making a
+                  career change into software development. Since then, I've
+                  participated in a full-time international coding program; I
+                  have completed various online courses and developed in
+                  Javascript, Ruby on Rails, and Python. I have also taken a job
+                  as a Quality Assurance analyst, thus springboarding my first
+                  experience within the industry.
+                </p>
+                <p>
+                  I finally concluded that I needed to finish the transition I
+                  had started in 2020. After a short sabbatical, I returned to
+                  building projects with Javascript, so here I am, in 2023, to
+                  showcase them.
+                </p>
+
+                <p>
+                  Please select an option at the left to read a little about
+                  some of the experiences I've had. I'll be honest, as I was
+                  putting this together, it was challenging to draw a straight
+                  line between my past experiences. So, I didn't try to. I
+                  decided to embrace my career journey in all its complexity.
+                  I've always been a learner, and that's my biggest ambition.
+                </p>
+                <p>
+                  It's been an exciting time for me to learn development, and
+                  whether you're a recruiter or a fellow developer, I hope we
+                  can connect and share this exciting time.
+                </p>
+                <p>Thank you.</p>
+              </AboutSectionContainer>
+
+              {data.map((project) => {
+                return (
+                  <AboutSectionContainer id={project.id}>
+                    <h1>{project.title}</h1>
+
+                    <p>{project.description}</p>
+
+                    <AboutImageContainer>
+                      <img src={project.link} alt="" />
+                    </AboutImageContainer>
+
+                    {project.body.map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))}
+                  </AboutSectionContainer>
+                );
+              })}
+            </AboutDescriptionContainer>
+          </>
+        )}
       </MainContainer>
     </AboutContainer>
   );

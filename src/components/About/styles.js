@@ -26,20 +26,6 @@ export const AboutContainer = styled.div`
       hsl(195deg 59% 32%) 86%,
       hsl(194deg 70% 27%) 100%
     );
-    /* 
-    background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
 
     background-size: 100%;
     background-repeat: repeat;
@@ -48,6 +34,10 @@ export const AboutContainer = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0rem 0.5rem 2rem 0.5rem;
   }
 `;
 
@@ -59,14 +49,16 @@ export const MainContainer = styled.div`
 
   height: 90%;
 
-  /* border: solid 2px #5b21b6; */
   border: solid 3px #155e75;
 
   border-radius: 8px;
   overflow: hidden;
 
-  /* box-shadow: 2px 2px 4px #fde047; */
   box-shadow: 2px 2px 4px #67e8f9;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const AboutCardsContainer = styled.div`
@@ -131,20 +123,6 @@ export const AboutDescriptionContainer = styled.div`
       hsl(194deg 70% 27%) 100%
     );
 
-    /* background-image: linear-gradient(
-      45deg,
-      hsl(350deg 89% 60%) 0%,
-      hsl(350deg 91% 60%) 11%,
-      hsl(350deg 92% 59%) 22%,
-      hsl(350deg 94% 58%) 33%,
-      hsl(350deg 95% 58%) 44%,
-      hsl(350deg 96% 57%) 56%,
-      hsl(350deg 98% 56%) 67%,
-      hsl(349deg 99% 54%) 78%,
-      hsl(349deg 99% 53%) 89%,
-      hsl(347deg 100% 50%) 100%
-    ); */
-
     background-size: 100%;
     background-repeat: repeat;
 
@@ -166,6 +144,16 @@ export const AboutDescriptionContainer = styled.div`
     padding-bottom: 1.5rem;
     line-height: 1.3;
   }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
 `;
 
 export const AboutImageContainer = styled.div`
@@ -179,8 +167,16 @@ export const AboutImageContainer = styled.div`
     width: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
 `;
 
 export const AboutSectionContainer = styled.div`
   padding-bottom: 8rem;
+
+  @media (max-width: 600px) {
+    padding-bottom: 2rem;
+  }
 `;
