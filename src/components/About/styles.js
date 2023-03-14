@@ -38,7 +38,7 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 600px) {
     scroll-snap-align: none;
-    padding: 0rem 0.5rem 2rem 0.5rem;
+    padding: 0rem 1rem 2rem 1rem;
   }
 `;
 

@@ -53,7 +53,11 @@ export function Contact() {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" title="twitter">
+                <a
+                  href="https://twitter.com/gui_recordon"
+                  target="_blank"
+                  title="twitter"
+                >
                   <TwitterLogo size={32} weight="bold" color="#155e75" />
                 </a>
               </li>
