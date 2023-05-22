@@ -39,7 +39,7 @@ export const ProjectsContainer = styled.div`
 
   @media (max-width: 600px) {
     scroll-snap-align: none;
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
 `;
 
@@ -51,7 +51,6 @@ export const MainPage = styled.div`
   height: 90%;
 
   border: solid 3px #155e75;
-  border-radius: 8px;
   overflow: hidden;
 
   box-shadow: 2px 2px 4px #67e8f9;
