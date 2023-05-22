@@ -50,7 +50,7 @@ export const ArticlesContainer = styled.div`
     scroll-snap-align: none;
     padding: 1rem;
     width: 100%;
-    padding-bottom: 4rem;
+    padding: 0 2rem 6rem;
     height: auto;
   }
 `;
@@ -72,8 +72,8 @@ export const CardContainer = styled.a`
   flex-direction: column;
   gap: 1.5rem;
   border: solid 3px #155e75;
-
   border-radius: 8px;
+
   box-shadow: 2px 2px 4px #67e8f9;
 
   width: 24rem;
@@ -108,5 +108,6 @@ export const CardContainer = styled.a`
 
   @media (max-width: 600px) {
     width: 100%;
+    border-radius: 0px;
   }
 `;
