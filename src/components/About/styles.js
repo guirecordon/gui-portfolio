@@ -38,7 +38,7 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 600px) {
     scroll-snap-align: none;
-    padding: 0rem 1rem 2rem 1rem;
+    padding: 0rem 2rem 2rem 2rem;
   }
 `;
 
@@ -59,6 +59,7 @@ export const MainContainer = styled.div`
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    border-radius: 0px;
   }
 `;
 
