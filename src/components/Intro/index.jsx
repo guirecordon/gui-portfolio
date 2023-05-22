@@ -14,7 +14,7 @@ import typescript from '../../assets/StackLogos/typescript.svg';
 import react from '../../assets/StackLogos/react-2.svg';
 import redux from '../../assets/StackLogos/redux.svg';
 import next from '../../assets/StackLogos/next-js.svg';
-import tailwind from '../../assets/StackLogos/tailwind-css-2.svg';
+import nodejs from '../../assets/StackLogos/nodejs-icon.svg';
 import { ArrowRight } from 'phosphor-react';
 
 export function Intro() {
@@ -87,11 +87,11 @@ export function Intro() {
           </LogoHolder>
           <LogoHolder>
             <img src={next} alt="" />
-            <span>Next</span>
+            <span>Next.js</span>
           </LogoHolder>
           <LogoHolder>
-            <img src={tailwind} alt="" />
-            <span>Tailwind</span>
+            <img src={nodejs} alt="" />
+            <span>Node.js</span>
           </LogoHolder>
         </LogosContainer>
       </RightSide>

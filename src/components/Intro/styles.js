@@ -91,10 +91,8 @@ export const RightSide = styled.div`
 `;
 
 export const LogosContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   padding-bottom: 2rem;

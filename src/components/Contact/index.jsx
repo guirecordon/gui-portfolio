@@ -27,7 +27,12 @@ export function Contact() {
             placeholder="name@email.com"
             required
           />
-          <textarea rows={12} name="message" required></textarea>
+          <textarea
+            rows={12}
+            name="message"
+            placeholder="write your message here"
+            required
+          ></textarea>
           <button type="submit">Send</button>
         </form>
 

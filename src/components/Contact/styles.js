@@ -73,6 +73,7 @@ export const ContactContainer = styled.div`
 
     border-radius: 8px;
     font-size: 1rem;
+    font-family: 'Roboto', monospace;
     padding: 0.5rem;
 
     &:focus {
@@ -85,6 +86,7 @@ export const ContactContainer = styled.div`
     flex: 1;
 
     font-size: 1rem;
+    font-family: 'Roboto', monospace;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: solid 3px #155e75;
@@ -140,6 +142,18 @@ export const ContactContainer = styled.div`
     scroll-snap-align: none;
     height: auto;
     scroll-snap-align: auto;
+
+    input {
+      border-radius: 0px;
+    }
+
+    textarea {
+      border-radius: 0px;
+    }
+
+    button {
+      border-radius: 0px;
+    }
   }
 `;
 

@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <HeroContainer>
       {matches ? (
-        <img src={coverMobile} />
+        <img height="50" src={coverMobile} />
       ) : (
         <iframe
           src="https://www.youtube.com/embed/wTcNtgA6gHs?autoplay=1&mute=1&start=15&end=240&loop=1&controls=0&showinfo=0&playlist=wTcNtgA6gHs"
