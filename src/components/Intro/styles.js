@@ -91,14 +91,19 @@ export const RightSide = styled.div`
 `;
 
 export const LogosContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
 
   padding-bottom: 2rem;
 
   span {
     color: #78716c;
+  }
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
