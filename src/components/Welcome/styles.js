@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import coverMobile from '../../assets/mobile/guiSurf.jpeg';
 
 export const WelcomeContainer = styled.div`
   scroll-snap-align: start;
@@ -39,7 +40,12 @@ export const WelcomeContainer = styled.div`
     scroll-snap-align: none;
 
     h1 {
-      font-size: 5rem;
+      font-size: 4.5rem;
+      background: url(${coverMobile});
+      background-size: auto 32%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 `;

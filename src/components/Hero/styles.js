@@ -66,12 +66,37 @@ export const Greetings = styled.div`
   }
 
   @media (max-width: 600px) {
+    text-align: left;
+    padding-left: 2rem;
+
     h3 {
       line-height: 1;
       font-size: 3.5rem;
       font-weight: 900;
       text-shadow: 2px 2px #7dd3fc;
       padding-bottom: 1rem;
+
+      background-image: linear-gradient(
+        250deg,
+        hsl(199deg 95% 74%) 0%,
+        hsl(199deg 76% 69%) 3%,
+        hsl(199deg 63% 63%) 9%,
+        hsl(198deg 53% 58%) 16%,
+        hsl(198deg 46% 53%) 25%,
+        hsl(197deg 44% 48%) 38%,
+        hsl(197deg 48% 42%) 53%,
+        hsl(196deg 52% 37%) 70%,
+        hsl(195deg 59% 32%) 86%,
+        hsl(194deg 70% 27%) 100%
+      );
+
+      background-size: 100%;
+      background-repeat: repeat;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
     }
 
     p {
