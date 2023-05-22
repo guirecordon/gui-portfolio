@@ -51,12 +51,14 @@ export const MainPage = styled.div`
   height: 90%;
 
   border: solid 3px #155e75;
+  border-radius: 8px;
   overflow: hidden;
 
   box-shadow: 2px 2px 4px #67e8f9;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    border-radius: 0px;
   }
 `;
 
